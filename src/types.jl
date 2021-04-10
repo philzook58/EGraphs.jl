@@ -27,13 +27,3 @@ function EGraph()
     EGraph(IntDisjointSets(0), Dict(), Dict(), [])
 end
 
-struct PatVar
-    id::Symbol
-end
-
-struct PatTerm
-    head::Symbol
-    args::Array{Union{PatTerm, PatVar}}
-end
-
-Pattern = Union{PatTerm,PatVar}
